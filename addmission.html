@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form - K.B. PUBLIC SCHOOL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="header-left">
+        <img src="images/logo.png" alt="School Logo">
+        <div>
+            <h1>K.B. PUBLIC SCHOOL</h1>
+            <p>Admission Form</p>
+        </div>
+    </div>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#admission-form">Admission</a>
+    <a href="index.html#contact">Contact</a>
+</nav>
+
+<!-- ADMISSION FORM SECTION -->
+<section id="admission-form">
+    <h2>Admission Form</h2>
+    <form action="https://formsubmit.co/your-kbpublicschool3@gmail.com" method="POST" enctype="multipart/form-data">
+        <!-- Student Details -->
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="Enter student full name" required>
+
+        <label>Date of Birth</label>
+        <input type="date" name="dob" required>
+
+        <label>Gender</label>
+        <select name="gender" required>
+            <option value="">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label>Class Applying For</label>
+        <select name="class" required>
+            <option value="">Select</option>
+            <option value="Nursery">Nursery</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+
+        <!-- Parent / Guardian Details -->
+        <label>Parent / Guardian Name</label>
+        <input type="text" name="guardian" placeholder="Enter parent/guardian name" required>
+
+        <label>Address</label>
+        <textarea name="address" rows="3" placeholder="Enter address" required></textarea>
+
+        <label>Contact Number</label>
+        <input type="tel" name="contact" placeholder="Enter contact number" required>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter email" required>
+
+        <label>Upload Photo (Optional)</label>
+        <input type="file" name="photo">
+
+        <!-- Submit -->
+        <button type="submit">Submit Form</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>
+        © 2026 K.B. Public School<br>
+        Designed & Developed by <strong>Sanskar Mishra</strong>
+    </p>
+</footer>
+
+</body>
+</html>
